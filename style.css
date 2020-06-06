@@ -8,6 +8,8 @@ body {
     background-color: #dedcdc;
 }
 
+
+
 a {
 	text-decoration: none
 }
@@ -418,10 +420,9 @@ main {
 }
 
 .object_card hr {
-	height: 1px;
+	size: 1px;
 	width: 280px;
-	background-color: #9e9e9e;
-	border: none;
+	color: #9e9e9e;
 }
 
 .gallery_link {
