@@ -161,7 +161,7 @@ main {
 	margin-bottom: 30px;
 }
 
-.article_card:nth-child(2n+2) {
+.article_card:nth-child(odd) {
 	margin-right: 0;
 }
 
