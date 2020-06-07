@@ -84,6 +84,11 @@ header:hover {
     padding-top: 20px;
 }
 
+/*Содержание*/
+main {
+	background-color: #f5f5f5;
+}
+
 /*Обложка*/
 .cover {
 	width: 1280px;
