@@ -292,7 +292,7 @@ footer {
 	text-align: center;
 }
 
-.social_icon img:first-child {
+.social_icon a:first-child {
 	margin-right: 16px;	
 }
 
