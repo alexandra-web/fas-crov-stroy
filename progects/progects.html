@@ -18,7 +18,7 @@
             <li><a href="../roof/roof.html">Кровля</a></li>
             <li><a href="../reviews/reviews.html">Отзывы</a></li>
             <li><a href="../contact/contact.html">Контакты</a></li>
-            <li>8 (901) 943-01-48</li>
+            <li><a href="tel:+79019430148">8 (901) 943-01-48</a></li>
             </ul>
         </nav>
     </header>
@@ -37,19 +37,20 @@
     </ul>
 	
 	<ul class="swith_progect">
-		<li><input type="button" class="swith" value="Фасад"></li>
-		<li><input type="button" class="swith" value="Кровля"></li>
-		<li><input type="button" class="swith" value="Объекты под ключ"></li>		
+		<li><button class="swith" onclick="openProgect(event, 'facade')" id="defaultOpen">Фасад</button></li>
+		<li><button class="swith" onclick="openProgect(event, 'roof')">Кровля</button></li>
+		<li><button class="swith" onclick="openProgect(event, 'full')">Объекты под ключ</button></li>		
 	</ul>
 
 	<section class="finish_progect">
 		<h2 class="hidden">Наши работы</h2>
 
 	<!--Проекты Фасад-->
-	<article class="object object_facade">
+	<article class="progects clearfix" id="facade">
+	<article class="object">
         <div class="object_card">
 	        <p>Проекты</p>
-	        <h4>Гарный</h4>
+	        <a href="#"><h4>Гарный</h4></a>
 	        <hr>
 	        <a href="#">
 	        <p>Подробнее
@@ -57,13 +58,13 @@
 	        </p>
 	        </a>
 	    </div>
-	    <img src="../img/20180717_101209.png" alt="Объект Гарный">                    
+	    <a href="#"><img src="../img/20180717_101209.png" alt="Объект Гарный"></a>                    
     </article>
 
-    <article class="object object_facade">
+    <article class="object">
         <div class="object_card">
 	        <p>Проекты</p>
-	        <h4>Самара, 8-я Просека</h4>
+	        <a href="#"><h4>Самара, 8-я Просека</h4></a>
 	        <hr>
 	        <a href="#">
 	        <p>Подробнее
@@ -71,13 +72,13 @@
 	        </p>
 	        </a>
 	    </div>
-	    <img src="../img/20190514_081855.png" alt="Объект Самара, 8-я Просека">                    
+	    <a href="#"><img src="../img/20190514_081855.png" alt="Объект Самара, 8-я Просека"></a>                    
     </article>
 
-    <article class="object object_facade">
+    <article class="object">
         <div class="object_card">
 	        <p>Проекты</p>
-	        <h4>Самара, 8-я Просека</h4>
+	        <a href="#"><h4>Самара, 8-я Просека</h4></a>
 	        <hr>
 	        <a href="#">
 	        <p>Подробнее
@@ -85,13 +86,13 @@
 	        </p>
 	        </a>
 	    </div>
-	    <img src="../img/fas_3.png" alt="Объект Самара, 8-я Просека">                    
+	    <a href="#"><img src="../img/fas_3.png" alt="Объект Самара, 8-я Просека"></a>                  
     </article>
 
-    <article class="object object_facade">
+    <article class="object">
         <div class="object_card">
 	        <p>Проекты</p>
-	        <h4>Самара, 8-я Просека</h4>
+	        <a href="#"><h4>Самара, 8-я Просека</h4></a>
 	        <hr>
 	        <a href="#">
 	        <p>Подробнее
@@ -99,13 +100,13 @@
 	        </p>
 	        </a>
 	    </div>
-	    <img src="../img/fas_4.png" alt="Объект Самара, 8-я Просека">                    
+	    <a href="#"><img src="../img/fas_4.png" alt="Объект Самара, 8-я Просека"></a>           
     </article>
 
-    <article class="object object_facade">
+    <article class="object">
         <div class="object_card">
 	        <p>Проекты</p>
-	        <h4>Береза</h4>
+	        <a href="#"><h4>Береза</h4></a>
 	        <hr>
 	        <a href="#">
 	        <p>Подробнее
@@ -113,13 +114,13 @@
 	        </p>
 	        </a>
 	    </div>
-	    <img src="../img/fas_5.png" alt="Объект Береза">                    
+	    <a href="#"><img src="../img/fas_5.png" alt="Объект Береза"></a>                  
     </article>
 
-    <article class="object object_facade">
+    <article class="object">
         <div class="object_card">
 	        <p>Проекты</p>
-	        <h4>Большая царевщина</h4>
+	        <a href="#"><h4>Большая царевщина</h4></a>
 	        <hr>
 	        <a href="#">
 	        <p>Подробнее
@@ -127,13 +128,13 @@
 	        </p>
 	        </a>
 	    </div>
-	    <img src="../img/fas_6.png" alt="Объект Большая царевщина">                    
+	    <a href="#"><img src="../img/fas_6.png" alt="Объект Большая царевщина"></a>                   
     </article>
 
-    <article class="object object_facade">
+    <article class="object">
         <div class="object_card">
 	        <p>Проекты</p>
-	        <h4>Самара, 8-я Просека</h4>
+	        <a href="#"><h4>Самара, 8-я Просека</h4></a>
 	        <hr>
 	        <a href="#">
 	        <p>Подробнее
@@ -141,14 +142,16 @@
 	        </p>
 	        </a>
 	    </div>
-	    <img src="../img/fas_7.png" alt="Объект Самара, 8-я Просека">                    
+	    <a href="#"><img src="../img/fas_7.png" alt="Объект Самара, 8-я Просека"></a>                  
     </article>
+</article>
 
 	<!--Проекты Кровля-->
-	<article class="object object_roof">
+	<article class="progects clearfix" id="roof">
+	<article class="object">
         <div class="object_card">
 	        <p>Проекты</p>
-	        <h4>Гарный</h4>
+	        <a href="#"><h4>Гарный</h4></a>
 	        <hr>
 	        <a href="#">
 	        <p>Подробнее
@@ -156,13 +159,13 @@
 	        </p>
 	        </a>
 	    </div>
-	    <img src="../img/20180717_101209.png" alt="Объект Гарный">                    
+	    <a href="#"><img src="../img/20180717_101209.png" alt="Объект Гарный"></a>                 
     </article>
 
-    <article class="object object_roof">
+    <article class="object">
         <div class="object_card">
 	        <p>Проекты</p>
-	        <h4>Малая царевщина</h4>
+	        <a href="#"><h4>Малая царевщина</h4></a>
 	        <hr>
 	        <a href="#">
 	        <p>Подробнее
@@ -170,13 +173,13 @@
 	        </p>
 	        </a>
 	    </div>
-	    <img src="../img/roof_2.png" alt="Объект Малая царевщина">                    
+	    <a href="#"><img src="../img/roof_2.png" alt="Объект Малая царевщина"></a>             
     </article>
 
-    <article class="object object_roof">
+    <article class="object">
         <div class="object_card">
 	        <p>Проекты</p>
-	        <h4>Малая царевщина</h4>
+	        <a href="#"><h4>Малая царевщина</h4></a>
 	        <hr>
 	        <a href="#">
 	        <p>Подробнее
@@ -184,13 +187,13 @@
 	        </p>
 	        </a>
 	    </div>
-	    <img src="../img/roof_3.png" alt="Объект Малая царевщина">                    
+	    <a href="#"><img src="../img/roof_3.png" alt="Объект Малая царевщина"></a>                   
     </article>
 
-    <article class="object object_roof">
+    <article class="object">
         <div class="object_card">
 	        <p>Проекты</p>
-	        <h4>Гарный</h4>
+	       <a href="#"> <h4>Гарный</h4></a>
 	        <hr>
 	        <a href="#">
 	        <p>Подробнее
@@ -198,13 +201,13 @@
 	        </p>
 	        </a>
 	    </div>
-	    <img src="../img/roof_4.png" alt="Объект Гарный">                    
+	    <a href="#"><img src="../img/roof_4.png" alt="Объект Гарный"></a>          
     </article>
 
-	<article class="object object_roof">
+	<article class="object">
         <div class="object_card">
 	        <p>Проекты</p>
-	        <h4>Гарный</h4>
+	        <a href="#"><h4>Гарный</h4></a>
 	        <hr>
 	        <a href="#">
 	        <p>Подробнее
@@ -212,14 +215,16 @@
 	        </p>
 	        </a>
 	    </div>
-	    <img src="../img/roof_5.png" alt="Объект Гарный">                    
+	    <a href="#"><img src="../img/roof_5.png" alt="Объект Гарный"></a>               
     </article>
+</article>
 
     <!--Проекты Под ключ-->
-	<article class="object object_all">
+    <article class="progects clearfix" id="full">
+	<article class="object">
         <div class="object_card">
 	        <p>Проекты</p>
-	        <h4>Гарный</h4>
+	        <a href="#"><h4>Гарный</h4></a>
 	        <hr>
 	        <a href="#">
 	        <p>Подробнее
@@ -227,13 +232,13 @@
 	        </p>
 	        </a>
 	    </div>
-	    <img src="../img/20180717_101209.png" alt="Объект Гарный">                    
+	    <a href="#"><img src="../img/20180717_101209.png" alt="Объект Гарный"></a>            
     </article>
 
-    <article class="object object_all">
+    <article class="object">
         <div class="object_card">
 	        <p>Проекты</p>
-	        <h4>Малая царевщина</h4>
+	        <a href="#"><h4>Малая царевщина</h4></a>
 	        <hr>
 	        <a href="#">
 	        <p>Подробнее
@@ -241,13 +246,13 @@
 	        </p>
 	        </a>
 	    </div>
-	    <img src="../img/all_2.png" alt="Объект Малая царевщина">                    
+	    <a href="#"><img src="../img/all_2.png" alt="Объект Малая царевщина"></a>                
     </article>
 
-	<article class="object object_all">
+	<article class="object">
         <div class="object_card">
 	        <p>Проекты</p>
-	        <h4>Большая царевщина</h4>
+	        <a href="#"><h4>Большая царевщина</h4></a>
 	        <hr>
 	        <a href="#">
 	        <p>Подробнее
@@ -255,13 +260,13 @@
 	        </p>
 	        </a>
 	    </div>
-	    <img src="../img/20190912_131150.png" alt="Объект Большая царевщина">                    
+	    <a href="#"><img src="../img/20190912_131150.png" alt="Объект Большая царевщина"></a>             
     </article>
 
-    <article class="object object_all">
+    <article class="object">
         <div class="object_card">
 	        <p>Проекты</p>
-	        <h4>Большая царевщина</h4>
+	        <a href="#"><h4>Большая царевщина</h4></a>
 	        <hr>
 	        <a href="#">
 	        <p>Подробнее
@@ -269,13 +274,13 @@
 	        </p>
 	        </a>
 	    </div>
-	    <img src="../img/all_4.png" alt="Объект Большая царевщина">                    
+	    <a href="#"><img src="../img/all_4.png" alt="Объект Большая царевщина"></a>             
     </article>
 
-    <article class="object object_all">
+    <article class="object">
         <div class="object_card">
 	        <p>Проекты</p>
-	        <h4>Гарный</h4>
+	        <a href="#"><h4>Гарный</h4></a>
 	        <hr>
 	        <a href="#">
 	        <p>Подробнее
@@ -283,8 +288,9 @@
 	        </p>
 	        </a>
 	    </div>
-	    <img src="../img/all_5.png" alt="Объект Гарный">                    
+	    <a href="#"><img src="../img/all_5.png" alt="Объект Гарный"></a>                
     </article>
+</article>
 
 	</section>
     </main>
@@ -303,8 +309,8 @@
             </ul>
             <ul class="footer_nav footer_column3">
                 <li><a href="../contact/contact.html">Контакты</a></li>
-                <li>Телефон: 8 (901) 943-01-48</li>
-                <li>E-mail: FKStroy63@yandex.ru</li>
+                <li>Телефон: <a href="tel:+79019430148">8 (901) 943-01-48</a></li>
+                <li>E-mail: <a href="mailto:FKStroy63@yandex.ru">FKStroy63@yandex.ru</a></li>
                 <li>Адрес: г. Самара, пр. Карла Маркса, д. 412 Б</li>
             </ul>
         <div class="social_icon">
@@ -316,6 +322,8 @@
             &copy; ООО &laquo;ФасКровСтрой&raquo; 2020
         </p>
     </footer>
+
+    <script src="tabs.js"></script>
 
   </body> 
   </html>
