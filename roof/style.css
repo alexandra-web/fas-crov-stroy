@@ -156,6 +156,11 @@ h2 {
 	margin-bottom: 30px;
 }
 
+.article_card:hover {
+	transform: scale(1.01);
+	transition: 0.3s;
+}
+
 .article_card:nth-child(odd) {
 	margin-right: 0;
 }
