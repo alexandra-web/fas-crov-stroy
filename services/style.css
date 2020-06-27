@@ -161,6 +161,11 @@ main {
 	margin-right: 16px;
 }
 
+.column:hover {
+	transform: scale(1.01);
+	transition: 0.3s;
+}
+
 .column:last-child {
 	margin-right: 0px;
 }
