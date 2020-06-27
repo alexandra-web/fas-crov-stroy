@@ -1,3 +1,23 @@
+@font-face{
+	font-family: "Gilroy";
+	src: url("fonts/Gilroy-ExtraBold.eot") format("eot"),
+	url("fonts/Gilroy-ExtraBold.woff") format("woff"),
+	url("fonts/Gilroy-ExtraBold.ttf") format("truetype");
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Gilroy";
+	src: url("fonts/Gilroy-Bold.eot") format("eot"),
+	url("fonts/Gilroy-Bold.woff") format("woff"),
+	url("fonts/Gilroy-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     margin: 0 auto;
     width: 1280px;
@@ -138,10 +158,10 @@ main {
 }
 
 .cover-text p:first-child {
-	font-family: "Britannic", sans-serif;
+	font-family: "Gilroy", sans-serif;
     color: #ffffff;
     font-size: 55px;
-    font-weight: bold;
+    font-weight: 800;
     text-transform: uppercase;
     line-height: 65px;
     text-align: center;
@@ -485,7 +505,7 @@ main {
 }
 
 .capture_form p:first-child {
-	font-family: "Britannic", sans-serif;
+	font-family: "Gilroy", sans-serif;
 	font-size: 50px;
 	text-transform: none;
 	color: #ffffff;
